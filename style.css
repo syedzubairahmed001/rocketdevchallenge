@@ -2,6 +2,7 @@
     grey : #282828
     dark-blue: #3441CA
 */
+
 body{
     padding: 0;
     margin: 0;
@@ -13,7 +14,7 @@ body{
 header{
     width: 100%;
     height: 100vh;
-    background-image: url(/Assets/SpaceBackground.svg);
+    background-image: url(Assets/SpaceBackground.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -95,7 +96,7 @@ h2{
 }
 @media only screen and (max-width: 600px){
     header{
-        background-image: url(/Assets/Mobile-Background.svg);
+        background-image: url(Assets/Mobile-Background.svg);
         background-position: center;
         background-size: cover;
     }
