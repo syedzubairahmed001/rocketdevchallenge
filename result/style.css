@@ -1,0 +1,160 @@
+/*_____colors____
+    grey : #282828
+    dark-blue: #3441CA
+*/
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Assets/SpaceBackground.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+/*___________navigation___________*/
+nav{
+    display: block;
+    position: relative;
+}
+.menu{
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 25px;
+    left: 70px;
+}
+nav ul{
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #282828;
+    font-weight: 500;
+}
+/*_______section main______*/
+.sec-main-container{
+    width: 50%;
+    padding-left: 70px;
+    display: block;
+    position: absolute;
+    top: 30%;
+}
+h1{
+    font-family: 'Space Mono', monospace;
+    color: #282828;
+    font-size: 50px;
+}
+h1 span{
+    color: #4483DB;
+}
+h2{
+    margin-top: 30px;
+    font-family: 'Space Mono', monospace;
+    color: #282828;
+    font-weight: 400;
+}
+.sec-main-btn{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    width: 150px;
+    padding: 10px 0;
+    margin-top: 30px;
+    box-shadow: 0px 1px 5px #282828;
+    border-radius: 30px;
+    background: linear-gradient(to right, #5ADAF2, #3441CA);
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        background-image: url(../Assets/Mobile-Background.svg);
+        background-position: center;
+        background-size: cover;
+    }
+    nav ul{
+        display: none;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 65px;
+        background-color: #fff;
+        z-index: 9999;
+    }
+    nav ul li{
+        display: block;
+        margin: 20px;
+    }
+    nav{
+        background-color: #fff;
+        width: 100%;
+        height: 65px;
+    }
+    .menu-active{
+        background-color: #4483DB;
+    }
+    .menu{
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+    .logo{
+        margin-top: 0;
+        top: 1px;
+        left: 20px;
+        width: 40px;
+    }
+    .sec-main-container{
+        padding: 0 20px;
+        width: 80%;
+    }
+    .sec-main-container a{
+        display: none;
+    }
+    h1{
+        font-size: 30px;
+        color: #e4e4e4;
+        text-align: center;
+    }
+    h1 span{
+        color: #282828
+    }
+    h2{
+        display: none;
+    }
+    .sec-btn-container{
+        height: 100px;
+    }
+    .sec-main-btn{
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
